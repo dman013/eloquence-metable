@@ -1,6 +1,6 @@
 <?php
 
-namespace Sofa\Eloquence\Metable;
+namespace Dmn013\Eloquence\Metable;
 
 class InvalidMutatorException extends \LogicException
 {

@@ -1,11 +1,11 @@
 <?php
 
-namespace Sofa\Eloquence\Metable;
+namespace Dmn013\Eloquence\Metable;
 
 use InvalidArgumentException;
 use Illuminate\Database\Eloquent\Model;
-use Sofa\Eloquence\Contracts\Attribute as AttributeContract;
-use Sofa\Eloquence\Mutator\Mutator;
+use Dmn013\Eloquence\Contracts\Attribute as AttributeContract;
+use Dmn013\Eloquence\Mutator\Mutator;
 
 /**
  * @property array $attributes
@@ -15,7 +15,7 @@ class Attribute extends Model implements AttributeContract
     /**
      * Attribute mutator instance.
      *
-     * @var \Sofa\Eloquence\Contracts\Mutator
+     * @var \Dmn013\Eloquence\Contracts\Mutator
      */
     protected static $attributeMutator;
 
@@ -132,7 +132,7 @@ class Attribute extends Model implements AttributeContract
      * Create new AttributeBag.
      *
      * @param  array  $models
-     * @return \Sofa\Eloquence\Metable\AttributeBag
+     * @return \Dmn013\Eloquence\Metable\AttributeBag
      */
     public function newBag(array $models = [])
     {
@@ -237,7 +237,7 @@ class Attribute extends Model implements AttributeContract
      *
      * @param mixed $value
      *
-     * @throws \Sofa\Eloquence\Metable\InvalidTypeException
+     * @throws \Dmn013\Eloquence\Metable\InvalidTypeException
      */
     public function setValue($value)
     {
